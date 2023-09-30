@@ -93,7 +93,7 @@ namespace zfuse
     }; // class Crc32
 
     template<typename T>
-    constexpr Crc32 ComputeCrc32(const T* buffer, size_t size) noexcept
+    constexpr Crc32 ComputeCrc32(const T* const buffer, size_t size) noexcept
     {
         uint32_t crc = 0xFFFFFFFF;
         for (size_t i = 0; i < size; ++i)
@@ -114,7 +114,7 @@ namespace zfuse
 /// <returns>The CRC32 of the string literal.</returns>
 constexpr zfuse::Crc32 operator"" _crc32(const char* str, size_t size) noexcept
 {
-    return zfuse::ComputeCrc32<char>(const_cast<char*>(str), size);
+    return zfuse::ComputeCrc32<char>(str, size);
 }
 /// <summary>
 /// Compute the CRC32 of a wide string literal at compile time.
@@ -124,6 +124,6 @@ constexpr zfuse::Crc32 operator"" _crc32(const char* str, size_t size) noexcept
 /// <returns>The CRC32 of the wide string literal.</returns>
 constexpr zfuse::Crc32 operator"" _crc32(const wchar_t* str, size_t size) noexcept
 {
-	return zfuse::ComputeCrc32<wchar_t>(const_cast<wchar_t*>(str), size);
+    return zfuse::ComputeCrc32<wchar_t>(str, size);
 }
 #endif // ZFUSE_CRC32_STRING_OPERATOR
