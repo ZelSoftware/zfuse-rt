@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zfuse", "zfuse.vcxproj", "{58DEFE91-A783-4B69-9D39-FD5EABECD143}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "playground", "..\playground\playground.vcxproj", "{1E3AE2F0-E08E-416D-B346-672D7FD5904D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{58DEFE91-A783-4B69-9D39-FD5EABECD143} = {58DEFE91-A783-4B69-9D39-FD5EABECD143}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

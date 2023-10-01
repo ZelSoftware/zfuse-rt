@@ -7,6 +7,7 @@
 #pragma once
 
 #include <cstddef>
+#include <cstdint>
 
 namespace zfuse
 {
@@ -92,6 +93,13 @@ namespace zfuse
 
     }; // class Crc32
 
+    /// <summary>
+    /// Compute the CRC32 of a buffer at compile time.
+    /// </summary>
+    /// <typeparam name="T">The type of the buffer.</typeparam>
+    /// <param name="buffer">The buffer to compute the CRC32 of.</param>
+    /// <param name="size">The size of the buffer.</param>
+    /// <returns>The CRC32 of the buffer.</returns>
     template<typename T>
     constexpr Crc32 ComputeCrc32(const T* const buffer, size_t size) noexcept
     {
@@ -102,6 +110,14 @@ namespace zfuse
         }
         return Crc32(crc ^ 0xFFFFFFFF);
     }
+
+    /// <summary>
+    /// Compute the CRC32 of a buffer.
+    /// </summary>
+    /// <param name="buffer">The buffer to compute the CRC32 of.</param>
+    /// <param name="size">The size of the buffer.</param>
+    /// <returns>The CRC32 of the buffer.</returns>
+    Crc32 ComputeCrc32(const void* const buffer, size_t size) noexcept;
 
 } // namespace zfuse
 
