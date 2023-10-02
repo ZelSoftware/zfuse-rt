@@ -94,16 +94,28 @@ namespace zfuse
 		}
 
 	public: // Methods
+		/// <summary>
+		/// Returns the status code.
+		/// </summary>
+		/// <returns>The status code.</returns>
 		StatusCode Code() const noexcept
 		{
 			return m_Code;
 		}
 
+		/// <summary>
+		/// Returns the status message.
+		/// </summary>
+		/// <returns>The status message.</returns>
 		std::string_view Message() const noexcept
 		{
 			return m_Message;
 		}
 
+		/// <summary>
+		/// Returns true if the status is ok.
+		/// </summary>
+		/// <returns>True if the status is ok.</returns>
 		bool IsOk() const noexcept
 		{
 			return m_Code == StatusCode_Ok;

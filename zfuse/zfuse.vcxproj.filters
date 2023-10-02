@@ -15,8 +15,14 @@
     <Filter Include="Header Files\System">
       <UniqueIdentifier>{f832482f-1908-4039-990e-527ae0b9bc04}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\status">
+    <Filter Include="Source Files\Status">
+      <UniqueIdentifier>{dd9685c3-0acd-4202-98cf-09c4c66b787c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Status">
       <UniqueIdentifier>{d6f3f6b8-6969-4b31-9186-0b346c826e11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{07e6068a-607d-48dc-b424-7f089caa2db4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -27,15 +33,15 @@
       <Filter>Header Files\System</Filter>
     </ClInclude>
     <ClInclude Include="status\status.h">
-      <Filter>Header Files\status</Filter>
+      <Filter>Header Files\Status</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="system\crc32.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="status\status.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Status</Filter>
+    </ClCompile>
+    <ClCompile Include="system\crc32.cpp">
+      <Filter>Source Files\System</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
