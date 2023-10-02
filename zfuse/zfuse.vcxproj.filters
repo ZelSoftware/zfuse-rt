@@ -15,6 +15,9 @@
     <Filter Include="Header Files\System">
       <UniqueIdentifier>{f832482f-1908-4039-990e-527ae0b9bc04}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\status">
+      <UniqueIdentifier>{d6f3f6b8-6969-4b31-9186-0b346c826e11}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\macros.h">
@@ -23,9 +26,15 @@
     <ClInclude Include="system\crc32.h">
       <Filter>Header Files\System</Filter>
     </ClInclude>
+    <ClInclude Include="status\status.h">
+      <Filter>Header Files\status</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="system\crc32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="status\status.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
