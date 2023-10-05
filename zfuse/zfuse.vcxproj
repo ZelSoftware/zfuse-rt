@@ -141,11 +141,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="core\macros.h" />
-    <ClInclude Include="status\status.h" />
     <ClInclude Include="system\crc32.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="status\status.cpp" />
     <ClCompile Include="system\crc32.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
