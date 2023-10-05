@@ -141,6 +141,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="core\macros.h" />
+    <ClInclude Include="core\version.h" />
     <ClInclude Include="system\crc32.h" />
   </ItemGroup>
   <ItemGroup>

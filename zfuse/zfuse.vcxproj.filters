@@ -26,6 +26,9 @@
     <ClInclude Include="system\crc32.h">
       <Filter>Header Files\System</Filter>
     </ClInclude>
+    <ClInclude Include="core\version.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="system\crc32.cpp">
